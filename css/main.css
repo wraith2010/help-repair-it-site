@@ -13,18 +13,12 @@ header {
     background-color: #800000;
 }
 
-header>img {
-    margin: 0 auto 0 auto;
-}
-
 section {
     display: flex;
     flex-wrap: wrap;
 }
 
 article {
-    width: 80vw;
-    margin: 2vh auto 2vh auto;
     min-height: 60vh;
     background-size: cover;
     background-position: 50% 50%;
@@ -32,8 +26,7 @@ article {
 
 article>div {
     width: 40vw;
-    float: right;
-    background-color: rgb(255, 255, 255, .8);
+    float: right;    
     height: 100%;
 }
 
@@ -43,23 +36,86 @@ article:nth-child(odd)>div {
 
 article>div>h1 {
     font-family: fantasy;
-    font-size: 4em;
     text-transform: uppercase;
 }
 
 article>div>p,
-article>div>ul {
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 2em;
+article>div>ul {    
     list-style: none;
 }
 
-article>div>ul>li>a{
+article>div>ul>li>a {
     text-decoration: none;
-    font-weight: bold;    
+    font-weight: bold;
 }
 
 article>div>ul {
     margin: 1vh auto 1vh auto;
-    width: 50%;
+}
+
+@media only screen and (max-device-width: 480px) {
+
+    header>img {
+        width: 100vw;
+    }
+
+    article {
+        width: 100vw;
+        margin: 1vh 0 2vh 0;
+    }
+
+    article>div {
+        width: 100vw;
+    }
+
+    article>div>h1 {
+        font-size: 4.5em;
+        color: #ffffff;
+        text-shadow: 10px 10px 5px black;
+    }
+
+    
+
+    article>div>p,
+    article>div>ul {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1.5em;
+        font-weight: bold;
+        color: #CCCCCC;
+    }
+
+    article>div>ul {
+        width: 100%;
+        padding: 0;
+    }
+}
+
+@media only screen and (min-device-width: 480px) {
+
+    header>img {
+        margin: 0 auto 0 auto;
+    }
+
+    article {
+        width: 80vw;
+        margin: 2vh auto 2vh auto;
+    }
+
+    article>div {
+        background-color: rgb(255, 255, 255, .8);
+        width: 40vw;
+    }
+
+    article>div>h1 {
+        font-size: 4em;
+    }
+
+    article>div>p,
+    article>div>ul {
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 1.5rem;
+    }
+
+
+    
 }
