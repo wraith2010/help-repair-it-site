@@ -1,0 +1,65 @@
+/*https://coolors.co/800000-603813-cdc5b4-011936-b59da4*/
+
+body {
+    margin: 0;
+    text-align: center;
+    /*background-color: #603813;*/
+    background-color: #CDC5B4;
+}
+
+header {
+    width: 100vw;
+    text-align: center;
+    background-color: #800000;
+}
+
+header>img {
+    margin: 0 auto 0 auto;
+}
+
+section {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+article {
+    width: 80vw;
+    margin: 2vh auto 2vh auto;
+    min-height: 60vh;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+article>div {
+    width: 40vw;
+    float: right;
+    background-color: rgb(255, 255, 255, .8);
+    height: 100%;
+}
+
+article:nth-child(odd)>div {
+    float: left;
+}
+
+article>div>h1 {
+    font-family: fantasy;
+    font-size: 4em;
+    text-transform: uppercase;
+}
+
+article>div>p,
+article>div>ul {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 2em;
+    list-style: none;
+}
+
+article>div>ul>li>a{
+    text-decoration: none;
+    font-weight: bold;    
+}
+
+article>div>ul {
+    margin: 1vh auto 1vh auto;
+    width: 50%;
+}
